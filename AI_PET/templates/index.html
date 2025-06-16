@@ -1,0 +1,16 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>루루봇 감정 기록</title>
+</head>
+<body>
+    <h1>최근 감정 기록</h1>
+    <ul>
+    {% for row in emotions %}
+        <li>{{ row.time }} - 감정: {{ row.emotion }}</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
